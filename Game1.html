@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yu-hsiang's EE Quest</title>
     <style>
-        /* 復古終端機與電機室風格 */
+        
         body { background: #050505; color: #00ff41; font-family: 'Courier New', monospace; display: flex; flex-direction: column; align-items: center; padding: 10px; margin: 0; }
         #game-container { border: 2px solid #00ff41; width: 95%; max-width: 400px; padding: 15px; border-radius: 5px; box-shadow: 0 0 20px rgba(0, 255, 65, 0.2); margin-top: 20px; }
         
@@ -32,8 +32,7 @@
         
         #final-screen { text-align: center; color: #ff00ff; padding: 20px; display: none; }
         .hidden { display: none; }
-        
-        /* 動畫效果 */
+
         .glitch { animation: flash 0.2s infinite; }
         @keyframes flash { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
     </style>
@@ -41,7 +40,7 @@
 <body>
 
 <div id="game-container">
-    <div style="text-align:center; font-size: 10px; letter-spacing: 2px;">[ SYSTEM: BELOVED BANK v12.09 ]</div>
+    <div style="text-align:center; font-size: 10px; letter-spacing: 2px;">[ SYSTEM: BELOVED BANK v3.26 ]</div>
     
     <div class="bar-label">TARGET: 修不完的 Bug & 混亂波形</div>
     <div class="bar-container"><div id="hp-bar"></div></div>
@@ -132,7 +131,6 @@
         let val = document.getElementById('freq-slider').value;
         document.getElementById('freq-display').innerText = `Frequency: ${val} Hz`;
         
-        // 視覺上的波形干擾效果
         let drift = Math.abs(val - 51); // 51 是 05/01 的隱喻
         playerWave.style.transform = `scaleY(${1 + (100-drift)/100}) skewX(${drift/2}deg) translateY(${(val%5)-2}px)`;
         
@@ -165,4 +163,5 @@
     }
 </script>
 </body>
+
 </html>
