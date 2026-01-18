@@ -1,2 +1,3 @@
-# Just_For_You-2026.ver-
+# Just_For_You_2026-black.ver-
 給我的可愛大狗勾過個快樂生日
+這是黑色信用卡版本Σ>―(〃°ω°〃)♡→
