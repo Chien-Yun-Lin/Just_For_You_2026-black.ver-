@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Core_System_v3.26_Ultimate_Precision</title>
+    <title>Core_System_v3.26</title>
     <style>
         :root { --main-green: #00ff41; --danger: #ff3131; --vcore: #00d4ff; --final-pink: #ff00ff; }
         body { background: #050505; color: var(--main-green); font-family: 'Courier New', monospace; display: flex; flex-direction: column; align-items: center; padding: 10px; margin: 0; touch-action: manipulation; }
@@ -61,7 +61,7 @@
     <div id="menu" class="menu">
         <button onclick="action('kalman')">Loop Filter Tuning</button>
         <button id="btn-reset" onclick="action('reset')">Hard Reset (<span id="r-cnt">2</span>)</button>
-        <button onclick="action('recap')">Recap (補血)</button>
+        <button onclick="action('recap')">Recap (Rail Stabilization)</button>
         <button onclick="action('overclock')">Overclock</button>
         <button id="btn-sync" class="span-2" onclick="startSync()" disabled>等待系統冷卻 (Cooldown)...</button>
         <button id="btn-final" class="span-2" style="display:none;" onclick="summon()">Summon Protocol</button>
@@ -71,10 +71,10 @@
         <div style="margin: 15px 0;"><span class="heart-glow">❤</span> <span style="color: #00ffff; font-weight: bold;">System Synchronized</span> <span class="heart-glow">❤</span></div>
         <div style="text-align: left; font-size: 13px; line-height: 1.8; color: #fff;">
             <p style="color: var(--main-green); border-bottom: 1px solid var(--main-green); padding-bottom: 5px;">> [Message Decrypted]</p>
-            親愛的于翔，生日快樂🍰<br><br>
-            歷史教我從混亂中尋找規律，而你教我從訊號中看見穩定。<br><br>
-            就像 PLL，即便外界充滿 Phase Noise，只要我們頻率一致，就能維持最完美的 Phase Lock。<br><br>
-            願你的 Vcore 永遠穩定，人生的 Error 都能一鍵 Reset。在未來的編年史裡，我們始終是彼此的最佳匹配。❤️
+            我的寶貝大男孩 于翔，生日快樂🍰<br><br>
+            歷史教我從混亂中尋找規律，而你讓我從訊號中看見穩定。<br><br>
+            就像PLL，即便外界充滿Phase Noise，只要我們頻率一致，就能維持最完美的Phase Lock。<br><br>
+            願你的Vcore永遠穩定，人生的Error都能一鍵Reset。在未來的編年史裡，我們始終是彼此的最佳匹配。❤️
             <p style="text-align: right; color: #aaa; font-size: 10px; margin-top:10px;">— 你專屬的 PLL Controller</p>
         </div>
         <button onclick="location.reload()" style="margin-top: 15px; width: 100%; border-color: var(--final-pink); color: var(--final-pink);">Re-Run System</button>
